@@ -1,0 +1,254 @@
+{
+  "summary": {
+    "avg_precision_at_3": 0.4,
+    "avg_recall_at_3": 1.0,
+    "avg_mrr": 1.0,
+    "avg_retrieval_ms": 10.716485977172852,
+    "avg_generation_s": 46.01937098503113,
+    "avg_total_s": 46.0300874710083
+  },
+  "results": [
+    {
+      "query_id": 1,
+      "question": "What is RAG and how does it work?",
+      "answer": "RAG stands for Retrieval-Augmented Generation. It is an AI architecture designed to enhance the outputs of large language models by incorporating relevant information from external knowledge bases. The process of RAG involves two main phases: indexing and querying.\n\nDuring the indexing phase, documents are broken down into smaller chunks, these chunks are then embedded into vectors, and finally, they are stored in a vector database. This step prepares the system with a structured set of information that can be quickly accessed later.\n\nIn the querying phase, the user's query is also embedded and used to perform a similarity search within the vector database. The goal here is to find the most relevant chunks of information that match the query. These retrieved chunks serve as additional context for the large language model (LLM).\n\nThe LLM then uses this context to generate a more grounded and accurate response. By leveraging the retrieved information, RAG helps to reduce the likelihood of hallucinations\u2014situations where the model generates information that is factually incorrect or fabricated. This is because the model is encouraged to rely on the provided context rather than its own parametric knowledge.",
+      "relevant_docs": [
+        "doc1",
+        "doc8"
+      ],
+      "retrieved_docs": [
+        "doc8",
+        "doc1",
+        "doc5"
+      ],
+      "retrieved_titles": [
+        "Retrieval Evaluation",
+        "RAG Architecture",
+        "LLM Hallucination"
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "recall_at_3": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieval_time_ms": 11.852264404296875,
+      "generation_time_s": 148.24301505088806,
+      "total_time_s": 148.25486731529236
+    },
+    {
+      "query_id": 2,
+      "question": "What are the different types of FAISS indexes?",
+      "answer": "FAISS indexes include Flat, IVF, and HNSW.",
+      "relevant_docs": [
+        "doc2"
+      ],
+      "retrieved_docs": [
+        "doc2",
+        "doc8",
+        "doc1"
+      ],
+      "retrieved_titles": [
+        "Vector Databases",
+        "Retrieval Evaluation",
+        "RAG Architecture"
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "recall_at_3": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieval_time_ms": 7.991552352905273,
+      "generation_time_s": 10.033108234405518,
+      "total_time_s": 10.041099786758423
+    },
+    {
+      "query_id": 3,
+      "question": "How do you choose chunk size and overlap for document chunking?",
+      "answer": "Typical chunk sizes range from 256 to 1024 tokens with 10-20% overlap to preserve context across chunk boundaries.",
+      "relevant_docs": [
+        "doc3"
+      ],
+      "retrieved_docs": [
+        "doc3",
+        "doc1",
+        "doc8"
+      ],
+      "retrieved_titles": [
+        "Document Chunking",
+        "RAG Architecture",
+        "Retrieval Evaluation"
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "recall_at_3": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieval_time_ms": 34.041404724121094,
+      "generation_time_s": 22.758869171142578,
+      "total_time_s": 22.7929105758667
+    },
+    {
+      "query_id": 4,
+      "question": "What embedding models are available and how do they differ?",
+      "answer": "The embedding models available include all-MiniLM-L6-v2, all-mpnet-base-v2, and bge-large-en-v1.5. The all-MiniLM-L6-v2 model produces 384-dimensional embeddings and is optimized for speed. The differences between these models are not detailed in the provided context, but generally, they may differ in dimensions of embeddings, optimization goals, and possibly training data or techniques used.",
+      "relevant_docs": [
+        "doc4"
+      ],
+      "retrieved_docs": [
+        "doc4",
+        "doc10",
+        "doc2"
+      ],
+      "retrieved_titles": [
+        "Embedding Models",
+        "Model Serving",
+        "Vector Databases"
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "recall_at_3": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieval_time_ms": 7.888555526733398,
+      "generation_time_s": 59.90491247177124,
+      "total_time_s": 59.912801027297974
+    },
+    {
+      "query_id": 5,
+      "question": "What causes hallucination in LLMs and how can RAG help?",
+      "answer": "Hallucination in LLMs occurs when the models generate factually incorrect or fabricated information, often relying on parametric knowledge rather than the provided context. RAG (Retrieval-Augmented Generation) helps reduce hallucinations by grounding responses in the retrieved context from external knowledge bases. This means that the LLM uses the relevant information retrieved from these sources to generate more accurate and contextually appropriate responses.",
+      "relevant_docs": [
+        "doc5",
+        "doc1"
+      ],
+      "retrieved_docs": [
+        "doc5",
+        "doc8",
+        "doc1"
+      ],
+      "retrieved_titles": [
+        "LLM Hallucination",
+        "Retrieval Evaluation",
+        "RAG Architecture"
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "recall_at_3": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieval_time_ms": 7.845401763916016,
+      "generation_time_s": 53.89569664001465,
+      "total_time_s": 53.903542041778564
+    },
+    {
+      "query_id": 6,
+      "question": "What is the ReAct pattern in agentic AI systems?",
+      "answer": "The ReAct pattern in agentic AI systems combines reasoning and acting by alternating between thought steps and action steps. Agents using this pattern can use tools like web search, code execution, and retrieval systems.",
+      "relevant_docs": [
+        "doc6"
+      ],
+      "retrieved_docs": [
+        "doc6",
+        "doc1",
+        "doc9"
+      ],
+      "retrieved_titles": [
+        "Agentic AI Systems",
+        "RAG Architecture",
+        "Prompt Engineering"
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "recall_at_3": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieval_time_ms": 7.745504379272461,
+      "generation_time_s": 27.030071258544922,
+      "total_time_s": 27.037816762924194
+    },
+    {
+      "query_id": 7,
+      "question": "What is MLOps and what are its key components?",
+      "answer": "MLOps refers to the practice of applying DevOps principles to machine learning systems. Its key components include data versioning, model training pipelines, model registry, serving infrastructure, and monitoring. Continuous integration and deployment for ML models involve automated testing of data quality, model performance, and serving endpoints. Model drift detection monitors for changes in input data distribution or model output quality over time.",
+      "relevant_docs": [
+        "doc7"
+      ],
+      "retrieved_docs": [
+        "doc7",
+        "doc10",
+        "doc6"
+      ],
+      "retrieved_titles": [
+        "MLOps Pipeline",
+        "Model Serving",
+        "Agentic AI Systems"
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "recall_at_3": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieval_time_ms": 7.151603698730469,
+      "generation_time_s": 50.67457461357117,
+      "total_time_s": 50.6817262172699
+    },
+    {
+      "query_id": 8,
+      "question": "How is retrieval quality measured in RAG systems?",
+      "answer": "Retrieval quality in RAG systems is measured using key metrics such as Precision@K, Recall@K, and Mean Reciprocal Rank (MRR). Precision@K measures the fraction of retrieved documents that are relevant, Recall@K measures the fraction of relevant documents that are retrieved, and MRR measures the rank of the first relevant document.",
+      "relevant_docs": [
+        "doc8"
+      ],
+      "retrieved_docs": [
+        "doc8",
+        "doc1",
+        "doc5"
+      ],
+      "retrieved_titles": [
+        "Retrieval Evaluation",
+        "RAG Architecture",
+        "LLM Hallucination"
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "recall_at_3": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieval_time_ms": 7.588863372802734,
+      "generation_time_s": 47.26939272880554,
+      "total_time_s": 47.276981592178345
+    },
+    {
+      "query_id": 9,
+      "question": "What prompt engineering techniques work best for RAG?",
+      "answer": "Key prompt engineering techniques that work best for RAG systems include chain-of-thought prompting, few-shot prompting, and structured output prompting.",
+      "relevant_docs": [
+        "doc9"
+      ],
+      "retrieved_docs": [
+        "doc9",
+        "doc5",
+        "doc8"
+      ],
+      "retrieved_titles": [
+        "Prompt Engineering",
+        "LLM Hallucination",
+        "Retrieval Evaluation"
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "recall_at_3": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieval_time_ms": 7.301568984985352,
+      "generation_time_s": 18.58460283279419,
+      "total_time_s": 18.591904401779175
+    },
+    {
+      "query_id": 10,
+      "question": "What are the differences between vLLM and Hugging Face Transformers for model serving?",
+      "answer": "vLLM is optimized for high throughput serving using PagedAttention memory management, while Hugging Face Transformers provides a simple interface for loading and running models locally.",
+      "relevant_docs": [
+        "doc10"
+      ],
+      "retrieved_docs": [
+        "doc10",
+        "doc7",
+        "doc5"
+      ],
+      "retrieved_titles": [
+        "Model Serving",
+        "MLOps Pipeline",
+        "LLM Hallucination"
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "recall_at_3": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieval_time_ms": 7.758140563964844,
+      "generation_time_s": 21.799466848373413,
+      "total_time_s": 21.807224988937378
+    }
+  ]
+}
