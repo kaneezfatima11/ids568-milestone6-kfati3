@@ -56,21 +56,20 @@ ensuring all responses are grounded in retrieved evidence.
 
 ## Performance Analysis on 10 Tasks
 
-| Task | Query | Tool Selected | Success | Time |
+| Task | Query | Tool Selected | Success | Actual Time |
 |---|---|---|---|---|
-| 1 | What is RAG and how does it work? | retriever | ✅ | TBD |
-| 2 | Summarize key concepts of vector databases | summarizer | ✅ | TBD |
-| 3 | What are document chunking strategies? | retriever | ✅ | TBD |
-| 4 | How do embedding models capture semantic meaning? | retriever | ✅ | TBD |
-| 5 | What causes hallucination in LLMs? | retriever | ✅ | TBD |
-| 6 | Explain the ReAct pattern in agentic AI | retriever | ✅ | TBD |
-| 7 | What are key components of MLOps pipeline? | retriever | ✅ | TBD |
-| 8 | How is retrieval quality measured in RAG? | retriever | ✅ | TBD |
-| 9 | What prompt engineering techniques work for RAG? | retriever | ✅ | TBD |
-| 10 | Difference between vLLM and HF Transformers? | retriever | ✅ | TBD |
+| 1 | What is RAG and how does it work? | retriever | ✅ | 124.6s |
+| 2 | Summarize key concepts of vector databases | summarizer | ✅ | 64.1s |
+| 3 | What are the different document chunking strategies? | retriever | ✅ | 14.4s |
+| 4 | How do embedding models capture semantic meaning? | retriever | ✅ | 10.0s |
+| 5 | What causes hallucination in LLMs and how can it be mitigated? | retriever | ✅ | 54.3s |
+| 6 | Explain the ReAct pattern in agentic AI systems | retriever | ✅ | 39.4s |
+| 7 | What are the key components of an MLOps pipeline? | retriever | ✅ | 18.3s |
+| 8 | How is retrieval quality measured in RAG systems? | retriever | ✅ | 46.9s |
+| 9 | What prompt engineering techniques work best for RAG? | retriever | ✅ | 18.3s |
+| 10 | What is the difference between vLLM and HF Transformers? | retriever | ✅ | 21.6s |
 
-*TBD values will be updated after agent evaluation runs*
-
+**Average task time: 41.2s | Tool accuracy: 10/10 correct routing**
 ---
 
 ## Failure Analysis
