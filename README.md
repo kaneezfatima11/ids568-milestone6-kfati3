@@ -1,5 +1,4 @@
-# Milestone 6: RAG & Agentic Pipeline
-## IDS568 - MLOps Course | University of Illinois Chicago
+# IDS 568 Milestone 6: RAG & Agentic Pipeline
 **Author:** Kaneez Fatima | **NetID:** kfati3
 
 ---
@@ -22,6 +21,8 @@ This repository implements a complete Retrieval-Augmented Generation (RAG) pipel
 ---
 
 ## Repository Structure
+
+```
 ids568-milestone6-kfati3/
 ├── rag_pipeline.ipynb          # Part 1: RAG implementation
 ├── agent_controller.py         # Part 2: Agent implementation
@@ -31,6 +32,7 @@ ids568-milestone6-kfati3/
 ├── agent_traces/               # Part 2: 10 task traces
 ├── requirements.txt            # Pinned dependencies
 └── README.md                   # This file
+```
 ---
 
 ## Setup Instructions
