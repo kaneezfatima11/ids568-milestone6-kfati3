@@ -21,6 +21,8 @@
 ---
 
 ## Retrieval Accuracy on 10 Queries
+| Query ID | Question | Relevant Docs | Retrieved Docs | P@3 | R@3 | RR |
+|---|---|---|---|---|---|---|
 
 | Q1 | What is RAG and how does it work? | doc1, doc8 | doc8, doc1, doc5 | 0.67 | 1.00 | 1.00 |
 | Q2 | What are the different types of FAISS indexes? | doc2 | doc2, doc8, doc1 | 0.33 | 1.00 | 1.00 |
@@ -97,7 +99,7 @@ Retrieving 3 chunks provides sufficient context for most queries without exceedi
 ---
 
 ## Summary Statistics
-*(To be updated after evaluation queries complete)*
+
 
 | Metric | Value |
 |---|---|
