@@ -81,7 +81,10 @@ def generate(tokenizer, model, prompt, max_new_tokens=300):
     text = tokenizer.apply_chat_template(
         messages, tokenize=False, add_generation_prompt=True
     )
-    inputs = tokenizer(text, return_tensors="pt").to("cuda")
+    inputs = tokenizer(text, return_tensors="pt")
+    # Move inputs to same device as model
+    device = next(model.parameters()).device
+    inputs = {k: v.to(device) for k, v in inputs.items()}
     with torch.no_grad():
         outputs = model.generate(
             **inputs,
